@@ -1,0 +1,17 @@
+@mixin box($color) {
+  width: 40px;
+  height: 20px;
+  background: $color;
+}
+
+.box {
+  .red {
+    @include box(red);
+  }
+  .blue {
+    @include box(yellow);
+  }
+  .green {
+    @include box(green);
+  }
+}
