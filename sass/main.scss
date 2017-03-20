@@ -1,28 +1,30 @@
-.blog > h1 {
-  color: red;
-  border: 1px solid red;
+$primary-color: #369;
+$margin: 5px;
+$padding: $margin * 1.5;
+
+body {
+  background: $primary-color;
+  font-family: Futura, "Trebuchet MS", sans-serif;
+  > h1 {
+      font-size: 3em;
+      color: #eee;
+      margin: $margin 0 0 $margin;
+  }
 }
 
-.blog  {
-  > h1 {
-    font-size: 20px;
-    color: blue;
-  }
-
-  .entry {
-    p {
-      font-size: 3em;
-      html.csscolumns & {
-          column-count: 2;
-          column-gap: 10px;
-          margin: 10px;
-      }
+.entry {
+    background: white;
+    margin: $margin;
+    padding: $padding;
+    h1 {
+        font-size: 1.2em;
+        margin: 0;
+    }
+    .date {
+        font-size: 0.3em;
+        color: $primary-color;
     }
     a {
-      color: red;
-      &:hover {
-        color: blue;
-      }
+        color: $primary-color;
     }
-  }
 }
